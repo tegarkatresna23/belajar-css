@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: hwb(158 6% 8%);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgba(11, 15, 239, 0.82);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #0f0e12;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #0fec25;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ede2e2;
+  color: rgb(82, 5, 5);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #8d7d7d;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: hwb(198 3% 55%);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(198, 88%, 47%);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>TEGAR KATRESNA</p>
+</div>
+
+<div class="topnav">
+  <a href="d:\belajar-css\css-tutorial\css-float.html">Css Float</a>
+  <a href="d:\belajar-css\css-advanced\css-CSS Flexbox.html">Css Flexbok</a>
+  <a href="d:\belajar-css\css-grid\css-grid intro.html">css grid</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Smkn 2 Subang</h2>
+      <h5>13 Maret 2023</h5>
+      <div class="fakeimg" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\952423324.webp"height="150"></div>
+      <p>Sejarah singkat</p>
+      <p>SMK ini didirikan pada tahun 1967 merupakan salah satu pelopor SMK Pertanian yang ada di Subang. Pada awal pembangunan SMK Negeri 2 Subang tidak ada sistem ketarunaan disini, namun sejak kepemimpinan Bapak Priyanto, SP sekolah ini disulap menjadi sekolah semi militer yang mempunyai disiplin tinggi sebagai acuannya.
+
+        </p>
+    </div>
+    <div class="card">
+      <h2>Gunung Semeru</h2>
+      <h5>Semeru</h5>
+      <div class="fakeimg" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\Semeru.jpg"height="150"></div>
+      <p>Sejarah singkat.</p>
+      <p>Gunung Semeru atau Gunung Meru adalah sebuah gunung berapi kerucut di Jawa Timur, Indonesia. Gunung Semeru merupakan gunung tertinggi di Pulau Jawa, dengan puncaknya Mahameru, 3.676 meter dari permukaan laut (mdpl).</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Raja Ampat</h2>
+      <div class="fakeimg" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\keindahan-alam-indonesia-6-Wikipedia.webp"height="100"></div>
+      <p>Raja Ampat sebagai destinasi wisata alam di Indonesia. Kamu tidak akan kecewa menyaksikan keindahan alam Indonesia yang masih permai dan alami ini..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg" style="height:120px;"><p><img src="c:\Users\LENOVO\Pictures\images (2).jpg"height="70"></p></div>
+      <div class="fakeimg" style="height:120px;"><p></p><img src="c:\Users\LENOVO\Pictures\images (4).jpg"height="90"></div>
+      <div class="fakeimg" style="height:130px;"><p><img src="c:\Users\LENOVO\Pictures\images (3).jpg"height="90"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<h2>Float Right</h2>
+
+<p>Sejarah Kota Subang</p>
+
+<p><img src="c:\Users\LENOVO\Pictures\pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+  Subang merupakan salah satu daerah kabupaten yang ada di provinsi Jawa Barat. Kabupaten seluas 2.051,76 km persegi ini mengisi 6,34 persen dari total luas Jabar.
+  Kabupaten Subang biasa dijuluki sebagai Kota Nanas karena memiliki banyak komoditas nanas dari para petaninya. </p>
+
+
+</body>
+</html>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div><img src="c:\Users\LENOVO\Pictures\download (1).jpg" alt="" height="70" width="80"></div>
+  <div><img src="c:\Users\LENOVO\Pictures\9f48191f77449b226721f03ba69e15f3.jpg" alt="" height="70" width="80"></div>
+  <div><img src="c:\Users\LENOVO\Pictures\download (2).jpg" alt="" height="70" width="80"></div>  
+</div>
+
+<p>Para Hokage </p>
+
+<p>Hashirama Senju -
+  Tobirama Senju-
+  Hiruzen Sarutobi</p>
+<br>
+<br>
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #0c0f07;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>Grid Layout</h1>
+  
+  <p>Data Diri </p>
+  
+  <div class="grid-container">
+    <div class="item1">Nama : Tegar katresna</div>
+    <div class="item2">TTL : Subang,23 November 2007</div>
+    <div class="item3">Alamat : Dangdeur</div>  
+    <div class="item4">Sekolah : SMKN 2 Subang</div>
+    <div class="item5">Jurusan : RPL</div>
+  </div>
+  
+  </body>
+  </html>
+  
+  
+  
+
+
+
+
+
+
